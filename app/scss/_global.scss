@@ -10,6 +10,7 @@ html {
 html,
 body {
    height: 100%;
+   overflow-x: hidden;
 }
 
 .box {
@@ -36,6 +37,7 @@ body {
    font-size: 15px;
    line-height: 24px;
    color: $text;
+   overflow-x: hidden;
 }
 
 .wrapper {

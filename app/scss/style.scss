@@ -371,17 +371,17 @@
         color: #fff;
     }
     input {
-            height: 43px;
-            margin-bottom: 8px;
-            border: none;
-            background-color: #76ae36;
-            color: #fff;
-            font-size: 14px;
-            padding-left: 40px;
-            display: block;
-            width: 100%;
-            outline: none;
-            
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 40px;
+        display: block;
+        width: 100%;
+        outline: none;
+
         &::placeholder {
             color: #fff;
             font-size: 14px;
@@ -425,7 +425,7 @@
             font-family: "icomoon";
         }
     }
-    .fancybox-button svg path{
+    .fancybox-button svg path {
         color: #fff;
     }
 }
@@ -1690,5 +1690,90 @@ button.icon-unsorted {
     }
 }
 // product-one end
+
+// page-404 start
+
+.page-404__wrapper,
+.about__wrapper {
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+
+.page-404__head,
+.about__head {
+    font-size: 24px;
+    color: #000;
+    padding: 23px 27px;
+    @include f500;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.page-404__inner {
+    text-align: center;
+    background-color: $green;
+    color: #fff;
+}
+
+.page-404__404 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 300px;
+    color: #fff;
+    padding-top: 70px;
+    line-height: 300px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/page-404.png);
+        width: 150px;
+        height: 292px;
+        margin-left: 20px;
+    }
+}
+
+.page-404__title {
+    margin-bottom: 30px;
+    @include f300;
+    font-size: 30px;
+}
+
+.page-404__text {
+    max-width: 501px;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.page-404__link {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 30px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+// page-404 end
+
+.about__inner {
+    padding: 0 50px;
+}
+.about__box {
+    h3 {
+        font-size: 20px;
+        @include f700;
+        color: #444;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}
 
 @import "media";

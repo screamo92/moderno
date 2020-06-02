@@ -515,11 +515,9 @@
     margin-left: -30px;
 }
 
-.products .product__item{
+.products .product__item {
     flex-basis: calc(25% - 30px);
     margin-left: 30px;
-
-
 }
 
 .products__inner-btn {
@@ -545,7 +543,7 @@
 .product__item {
     max-width: 442px;
     width: 100%;
-    
+
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
     &-img {
@@ -1568,6 +1566,38 @@ button.icon-unsorted {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+    form {
+        .jq-selectbox__select {
+            height: 27px;
+            padding: 0 22px 0 10px;
+            border: 1px solid #d6d6d6;
+            border-bottom-color: #d6d6d6;
+            border-radius: 0px;
+            background: transparent;
+            box-shadow: none;
+            @include f500;
+            color: #70838d;
+            text-shadow: none;
+            line-height: 27px;
+        }
+        .jq-selectbox__trigger {
+            border-left: none;
+        }
+        .jq-selectbox__dropdown {
+            top: 25px;
+        }
+        .jq-selectbox__trigger-arrow {
+            border: none;
+            top: 0;
+            right: 15px;
+            &::before {
+                content: "\f0d7";
+                font-family: "icomoon";
+                color: $green;
+                font-size: 13px;
+            }
+        }
+    }
 }
 
 .price__product {
@@ -1984,6 +2014,21 @@ button.icon-unsorted {
 .setting__line {
     margin-bottom: 21px;
     display: flex;
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-family: "Roboto-Regular", sans-serif;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+        outline: none;
+    }
     label {
         width: 260px;
         color: #444;
@@ -2009,6 +2054,22 @@ button.icon-unsorted {
     }
     .jq-selectbox {
         width: 100%;
+        max-width: 540px;
+    }
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+    .jq-selectbox__trigger-arrow {
+        color: #444444;
+        border: none;
+        font-size: 15px;
+        right: 20px;
+        line-height: 40px;
+        top: 0;
+        &::before {
+            content: "\f0d7";
+            font-family: "icomoon";
+        }
     }
 }
 // end settings
